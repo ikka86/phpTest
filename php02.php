@@ -3,17 +3,17 @@
 $name = "KAHO";
 //if文$name があなたの名前だったら 「私は あなたの名前 です」、
 //もし違ったら「あなたの名前ではありません」と表示
-if ($name = "KAHO"){
-     echo "私は" . $name . "です";
+if ($name == "KAHO") {
+    echo "私はKAHOです";
 } else {
-     echo "私は" . $name . "ではありませS"; 
+    echo "私はKAHOではありません";
 }
 ?>
 <br></br>
 <?php
 //2. for文を使って、1から10000までの合計の値を表示してください。
 $total = 0;
-for ($i= 1; $i < 10000; $i++) { 
+for ($i= 1; $i <= 10000; $i++) { 
  $total += $i;
 }
 echo $total;
@@ -22,8 +22,8 @@ echo $total;
 <?php
 //3. $fruits に配列で好きなフルーツを5個代入し、foreach文で順番に出力してください。
 echo "好きなフルーツは";
-$fruit =array("もも", "ぶどう", "グレープフルーツ", "パイナップル", "みかん");
-foreach ($fruit as $fruit) {
+$fruits =array("もも", "ぶどう", "グレープフルーツ", "パイナップル", "みかん");
+foreach ($fruits as $fruit) {
   echo $fruit;
   echo "\n";
 }
